@@ -18,3 +18,27 @@ html {
           rounded-[0.8rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10
           transition-all duration-300;
 }
+
+.car_page {
+  @apply w-full h-screen;
+}
+
+.car_image {
+  @apply w-full h-full object-cover;
+}
+
+.car_details {
+  @apply absolute top-[20%] left-[50%] text-center;
+}
+
+.transform_50 {
+  transform: translate(-50%,-50%);
+}
+
+.model_name {
+  @apply text-[4rem] text-[#393c41] font-semibold;
+}
+
+.model_info {
+  @apply text-[#4c4d51] text-2xl;
+}
