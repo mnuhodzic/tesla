@@ -31,29 +31,29 @@
 
 {#if showMobMenu}
 <div class="nav_menu_mob">
-  <div class="nav_backdrop_mob" on:click={() => showMobMenu=!showMobMenu}></div>
+  <div class="nav_backdrop_mob" on:click={() => showMobMenu=false}></div>
   <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
     <ul>
       <li class="mb-1">
-        <a href="/models" class="nav_option_mob">Model S</a>
+        <a href="/models" class="nav_option_mob" on:click={() => showMobMenu=false}>Model S</a>
       </li>
       <li class="mb-1">
-        <a href="/model3" class="nav_option_mob">Model 3</a>
+        <a href="/model3" class="nav_option_mob" on:click={() => showMobMenu=false}>Model 3</a>
       </li>
       <li class="mb-1">
-        <a href="/modelx" class="nav_option_mob">Model X</a>
+        <a href="/modelx" class="nav_option_mob" on:click={() => showMobMenu=false}>Model X</a>
       </li>
       <li class="mb-1">
-        <a href="/modely" class="nav_option_mob">Model Y</a>
+        <a href="/modely" class="nav_option_mob" on:click={() => showMobMenu=false}>Model Y</a>
       </li>
       <li class="mb-1">
-        <a href="/solarroof" class="nav_option_mob">Solar Roof</a>
+        <a href="/solarroof" class="nav_option_mob" on:click={() => showMobMenu=false}>Solar Roof</a>
       </li>
       <li class="mb-1">
-        <a href="/solarpanels" class="nav_option_mob">Solar Panels</a>
+        <a href="/solarpanels" class="nav_option_mob" on:click={() => showMobMenu=false}>Solar Panels</a>
       </li>
       <li class="mb-1">
-        <a href="https://shop.tesla.com/" class="nav_option_mob">Shop</a>
+        <a href="https://shop.tesla.com/" class="nav_option_mob" on:click={() => showMobMenu=false}>Shop</a>
       </li>
     </ul>
   </nav>
