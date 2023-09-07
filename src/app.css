@@ -20,7 +20,7 @@ html {
 }
 
 .car_page {
-  @apply w-full h-screen;
+  @apply w-full h-screen relative;
 }
 
 .car_image {
@@ -44,7 +44,7 @@ html {
 }
 
 .car_buttons {
-  @apply absolute top-[85%] left-[50%];
+  @apply absolute top-[85%] left-[50%] flex flex-col lg:flex-row;
 }
 
 .btn {
@@ -52,5 +52,5 @@ html {
 }
 
 .demo {
-  @apply text-[#393c41] bg-white bg-opacity-60 ml-8;
+  @apply text-[#393c41] bg-white bg-opacity-60 lg:ml-8;
 }

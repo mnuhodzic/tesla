@@ -32,21 +32,23 @@
 {#await preload(src)}
   <Loader />
 {:then}
-  <div class="car_page">
-    <img {src} class="car_image">
-  </div>
+  <section>
+    <div class="car_page">
+      <img {src} class="car_image">
+    </div>
+    
+    <div class="car_details transform_50">
+      <h1 class="model_name">{data.name}</h1>
+      <h2 class="model_info hidden lg:block">{data.info}</h2>
+    </div>
   
-  <div class="car_details transform_50">
-    <h1 class="model_name">{data.name}</h1>
-    <h2 class="model_info">{data.info}</h2>
-  </div>
-
-  <div class="car_buttons transform_50" >
-    <button class="btn" on:click={openTeslaOrderPage}>Order Now</button>
-    {#if notCar}
-      <button class="btn demo" on:click={openTeslaConsultationPage}>Consultation</button>
-      {:else}
-      <button class="btn demo" on:click={openTeslaDemoPage}>Demo drive</button>
-    {/if}
-  </div>
+    <div class="car_buttons transform_50" >
+      <button class="btn" on:click={openTeslaOrderPage}>Order Now</button>
+      {#if notCar}
+        <button class="btn demo" on:click={openTeslaConsultationPage}>Consultation</button>
+        {:else}
+        <button class="btn demo" on:click={openTeslaDemoPage}>Demo drive</button>
+      {/if}
+    </div>
+  </section>
 {/await}
