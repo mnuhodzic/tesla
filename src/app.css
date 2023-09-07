@@ -19,6 +19,23 @@ html {
           transition-all duration-300;
 }
 
+.navbar_mob {
+  @apply flex items-center text-[#181b21] p-3;
+} 
+
+.nav_menu_mob {
+  @apply relative z-50 lg:hidden;
+}
+
+.nav_backdrop_mob {
+  @apply fixed inset-0 bg-gray-800 opacity-25;
+}
+
+.nav_option_mob {
+  @apply block p-4 text-xl font-semibold text-[#393c41] hover:bg-[#171a20] hover:text-white rounded;
+}
+
+
 .car_page {
   @apply w-full h-screen relative;
 }
@@ -36,7 +53,7 @@ html {
 }
 
 .model_name {
-  @apply text-[4rem] text-[#393c41] font-semibold;
+  @apply text-5xl lg:text-[4rem] text-[#393c41] font-semibold;
 }
 
 .model_info {
